@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="tip.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Calculator section -->
+  <section id="calculator">
+    <h1>Tip Calculator</h1>
+    <hr>
+    <form id="tipForm">
+      <p>How much was your bill?</p>
+      <p>&euro; <input type="text" name="bill_total" value="" id="billTotal" placeholder="Bill Amount" autocomplete="off"></p>
+      <p>How was the service?</p>
+      <select id="tipAmount">
+        <option disabled selected value="0">-- Choose an Option --</option>
+        <option value="0.2">20&#37; &#45;Excellent</option>
+        <option value="0.15">15&#37; &#45; Very Good</option>
+        <option value="0.1">10&#37; &#45; Good</option>
+        <option value="0.05">5&#37; &#45; Average</option>
+        <option value="0.0">0&#37; &#45; Poor</option>
+      </select>
+      <p>How many people are splitting the bill?</p>
+      <input id="noPeople" type="text" placeholder="Number of People"> <span id="peopleText">people</span><br><br>
+      <button type="button" id="calculate">Calculate</button>
+      <button type="reset" id="resetButton">Clear</button>
+    </form>
+    <!-- Display tip amount section -->
+    <section id="displayTip">
+      <p>Total tip amount is: &euro;<span id="tip">0.00</span>
+        <small id="each">each</small></p>
+    </section>
+  </section>
+  <!-- End of calculator section -->
+
+  <script src="tip.js" charset="utf-8"></script>
+</body>
+
+</html>

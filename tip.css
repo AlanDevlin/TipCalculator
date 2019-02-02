@@ -1,0 +1,84 @@
+body {
+  margin: auto;
+  background-image: linear-gradient(#1c92d2, #f2fcfe);
+  background-size: cover;
+  color: white;
+}
+
+section#calculator {
+  background-color: #d2591c;
+  color: black;
+  margin: 10em auto;
+  width: 30%;
+  text-align: center;
+  padding: 2.5em;
+  border-radius: 2.5em;
+  border-style:solid;
+  border-width:0.08em;
+  box-shadow: 0.4em 0.4em;
+}
+
+section#calculator h1 {
+  font-family: fantasy, sans-serif;
+  font-size: 2em;
+  color:white;
+  font-weight: lighter;
+}
+
+section#calculator hr {
+  border: 0;
+  border-top: 1px solid black;
+  width: 100%
+}
+
+section#calculator p {
+  font-size: 1em;
+  font-weight: bold;
+  color:white;
+}
+
+section#calculator input[type=text] {
+  width:9em;
+}
+
+section#calculator input[type=text]:focus {
+  width: 10em;
+  transition: 0.9s;
+  left: 0;
+}
+
+section#calculator span#peopleText {
+  color:white;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+section#calculator select {
+  width:12em;
+}
+
+section#calculator select:focus {
+  width: 15em;
+  transition: 0.9s;
+  left: 0;
+}
+
+section#calculator button {
+  padding: 0.75em;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+  color:white;
+  margin-right:0.5em;
+  border: solid 0.35em;
+}
+
+section#calculator button:hover {
+  transform: scale(1.1);
+}
+section#calculator button#calculate {
+  background-color:green;
+}
+
+section#calculator button[type=reset] {
+  background-color: red;
+}
